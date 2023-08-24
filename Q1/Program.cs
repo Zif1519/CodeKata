@@ -19,4 +19,20 @@
             return answer;
         }
     }
+
+    public class Solution2
+    {
+        public double solution(int[] arr)
+        {
+            double answer = 0;
+            foreach (double a in arr)
+            {
+                answer += a;
+            }
+            answer /= arr.Length;
+            return answer;
+        }
+    }
+
+
 }
