@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Solution solution = new Solution();
-            Console.WriteLine(solution.solution(3));
+            Solution4 solution = new Solution4();
+            Console.WriteLine(solution.solution(104));
             Console.WriteLine(solution.solution(4));
         }
     }
@@ -48,6 +48,15 @@
         }
     }
 
-
+    public class Solution4
+    {
+        public int solution(int n)
+        {
+            int answer = 0;
+            for (int i = 1; i <= n; i++)
+            { answer += (n % i == 0) ? i : 0 }
+            return answer;
+        }
+    }
 
 }
